@@ -1,0 +1,90 @@
+
+{
+    "screen": {
+        "width": 800,
+        "height": 600,
+        "background": [200, 200, 200],
+        "clock_tick": 30
+    },
+    "player": {
+        "image": "./graphics/player.png",
+        "size": [50, 50],
+        "speed": 5,
+        "health": 100,
+        "bullet": {
+            "image": "./graphics/player_bullet.png",
+            "size": [15, 15],
+            "speed": 10,
+            "damage": 10
+        }
+    },
+    "enemy": {
+        "image": "./graphics/enemy.png",
+        "size": [50, 50],
+        "speed": 3,
+        "damage": 100,
+        "health": 100,
+        "bullet": {
+            "image": "./graphics/enemy_bullet.png",
+            "size": [15, 15],
+            "speed": 10,
+            "damage": 50
+        }
+    },
+
+    "explosion": {
+        "small" : {
+            "image": "./graphics/small_hit.png",
+            "size": [20, 20],
+            "timeout": 15
+        },
+        "big" : {
+            "image": "./graphics/big_hit.png",
+            "size": [100, 100],
+            "timeout": 30
+        }
+    },
+
+    "audio": {
+        "background": {
+            "music": "./audio/background.wav",
+            "volume": 0.1
+        },
+        "player": {
+            "shoot": {
+                "sound": "./audio/laser.wav",
+                "volume": 0.2
+            },
+            "hit_by_bullet": {
+                "sound": "./audio/explosion.wav",
+                "volume": 0.3
+            },
+            "hit_by_enemy": {
+                "sound": "./audio/explosion.wav",
+                "volume": 0.5
+            },
+            "die": {
+                "sound": "./audio/explosion.wav",
+                "volume": 0.1
+            }
+        },
+        "enemy": {
+            "shoot": {
+                "sound": "./audio/laser.wav",
+                "volume": 0.2
+            },
+            "hit": {
+                "sound": "./audio/explosion.wav",
+                "volume": 0.3
+            },
+            "die": {
+                "sound": "./audio/explosion.wav",
+                "volume": 0.0
+            }
+        }
+    }
+}
+
+
+
+
