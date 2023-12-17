@@ -100,7 +100,7 @@ Ghi nội dung của resource vào file (`WriteFile`).
 
 > Resource là một cách để lưu trữ dữ liệu trong file exe. Nó có thể là ảnh, text, hay bất cứ thứ gì. Các bạn có thể tìm hiểu thêm về resource.
 
-Các bạn có thể đăt breakpoint trong hàm này, xem nội dung của resource, file path.
+Các bạn có thể đặt breakpoint trong hàm này, xem nội dung của resource, file path.
 
 ![Alt text](./img/image-7.png)
 
