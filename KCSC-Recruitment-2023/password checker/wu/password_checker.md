@@ -21,7 +21,7 @@ Chương trình thông báo số lần thử còn lại, yêu cầu nhập mật
 
 Nếu nhập sai, sẽ bị trừ số lần thử. Nếu đúng, sẽ in ra flag.
 
-Nếu ban đầu số luợt thử là 0, chương trình in thông báo tạm biệt, xóa `hash.so` và xóa chính nó.
+Nếu ban đầu số lượt thử là 0, chương trình in thông báo tạm biệt, xóa `hash.so` và xóa chính nó.
 
 Do có `wordlist.txt` nên nghĩ ngay nó cần brute force.
 

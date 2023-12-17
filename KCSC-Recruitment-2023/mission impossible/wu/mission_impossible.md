@@ -83,6 +83,8 @@ Tóm gọn quá trình từ đầu đến giờ:
 
 Sau đó thì chương trình gọi `./GamePlay` vào chơi game.
 
+Trước khi thoát, chương trình xóa các folder giải nén từ `./resources`, sửa lại signature của `./resources` thành `sonx`.
+
 Chắc chắn việc cần làm tiếp theo là phải xem `./resources` nó chứa cái gì.
 
 Sửa lại signature của `./resources` thành `Rar!` và giải nén bằng WinRAR (Thêm extension `.rar` vào `./resources` nếu cần).

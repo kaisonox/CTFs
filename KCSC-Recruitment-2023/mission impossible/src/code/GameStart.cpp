@@ -15,7 +15,7 @@ std::string FindWinRARPath()
         "C:\\Program Files (x86)\\WinRAR\\WinRAR.exe"
     };
 
-    for (const auto &path : possiblePaths)
+    for (const auto& path : possiblePaths)
     {
         DWORD fileAttr = GetFileAttributesA(path.c_str());
         if (fileAttr != INVALID_FILE_ATTRIBUTES && !(fileAttr & FILE_ATTRIBUTE_DIRECTORY))
@@ -23,7 +23,6 @@ std::string FindWinRARPath()
             return path;
         }
     }
-
     return "";
 }
 
@@ -38,7 +37,7 @@ bool ModifyResourceSignature(int is_restore)
         std::cerr << "Unable to open file: " << resource_path << std::endl;
         return false;
     }
-    char bytes[4] = {0x00};
+    char bytes[4] = { 0x00 };
     if (is_restore)
     {
         // check if the the signature is sonx
@@ -48,7 +47,6 @@ bool ModifyResourceSignature(int is_restore)
             std::cerr << "Unknown resource signature!" << std::endl;
             return false;
         }
-
         // rar!
         bytes[0] = 0x52;
         bytes[1] = 0x61;
@@ -76,7 +74,7 @@ bool ModifyResourceSignature(int is_restore)
     return true;
 }
 
-bool RunHiddenCommand(const std::string &cmd)
+bool RunHiddenCommand(const std::string& cmd)
 {
     STARTUPINFOA si;
     PROCESS_INFORMATION pi;
@@ -88,17 +86,17 @@ bool RunHiddenCommand(const std::string &cmd)
 
     // Create a process for the command
     if (!CreateProcessA(
-            NULL,               // No module name (use command line)
-            (LPSTR)cmd.c_str(), // Command line
-            NULL,               // Process handle not inheritable
-            NULL,               // Thread handle not inheritable
-            FALSE,              // Set handle inheritance to FALSE
-            0,                  // No creation flags
-            NULL,               // Use parent's environment block
-            NULL,               // Use parent's starting directory
-            &si,                // Pointer to STARTUPINFO structure
-            &pi                 // Pointer to PROCESS_INFORMATION structure
-            ))
+        NULL,               // No module name (use command line)
+        (LPSTR)cmd.c_str(), // Command line
+        NULL,               // Process handle not inheritable
+        NULL,               // Thread handle not inheritable
+        FALSE,              // Set handle inheritance to FALSE
+        0,                  // No creation flags
+        NULL,               // Use parent's environment block
+        NULL,               // Use parent's starting directory
+        &si,                // Pointer to STARTUPINFO structure
+        &pi                 // Pointer to PROCESS_INFORMATION structure
+    ))
     {
         std::cerr << "CreateProcess failed (" << GetLastError() << ").\n";
         return false;
@@ -114,7 +112,7 @@ bool RunHiddenCommand(const std::string &cmd)
     return true;
 }
 
-bool ExtractResource(const std::string &winrar_path)
+bool ExtractResource(const std::string& winrar_path)
 {
     std::string command = "\"" + winrar_path + "\" x -ierr ./resources .";
     if (!RunHiddenCommand(command))
@@ -133,18 +131,58 @@ void DeleteFolders()
         "./graphics",
     };
 
-    for (const auto &path : possiblePaths)
+    for (const auto& path : possiblePaths)
     {
         try
         {
             std::filesystem::remove_all(path);
         }
-        catch (std::filesystem::filesystem_error &e)
+        catch (std::filesystem::filesystem_error& e)
         {
             std::cout << "Error deleting folder: " << e.what() << std::endl;
         }
     }
 }
+
+
+bool StartGame(const std::string& filePath) {
+    STARTUPINFOA si;
+    PROCESS_INFORMATION pi;
+    ZeroMemory(&si, sizeof(si));
+    si.cb = sizeof(si);
+    ZeroMemory(&pi, sizeof(pi));
+
+    // Convert std::string to LPCSTR (required for CreateProcess)
+    LPCSTR path = filePath.c_str();
+
+    // Start the child process
+    if (!CreateProcessA(
+            path,   // Application name
+            NULL,   // Command line (not used here, so NULL)
+            NULL,   // Process handle not inheritable
+            NULL,   // Thread handle not inheritable
+            FALSE,  // Set handle inheritance to FALSE
+            0,      // No creation flags
+            NULL,   // Use parent's environment block
+            NULL,   // Use parent's starting directory
+            &si,    // Pointer to STARTUPINFO structure
+            &pi     // Pointer to PROCESS_INFORMATION structure
+        )) 
+    {
+        std::cerr << "CreateProcess failed (" << GetLastError() << ").\n";
+        return false;
+    }
+
+    // Wait until child process exits (optional)
+    WaitForSingleObject(pi.hProcess, INFINITE);
+
+    // Close process and thread handles
+    CloseHandle(pi.hProcess);
+    CloseHandle(pi.hThread);
+
+    return true;
+}
+
 
 int main()
 {
@@ -170,8 +208,13 @@ int main()
         return 0;
     }
 
-    
-
+    // Start GamePlay.exe
+    std::string filePath = "./GamePlay";
+    if (!StartGame(filePath))
+    {
+        std::cout << "Start game failed!" << std::endl;
+        return 0;
+    }
 
     DeleteFolders();
     ModifyResourceSignature(0);
