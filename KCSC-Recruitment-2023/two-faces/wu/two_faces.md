@@ -174,7 +174,7 @@ Debug hàm này như nào? Chỉ cần đặt breakpoint tại `IsDebuggerPresen
 
 Đến đây thì logic quá rõ ràng rồi.
 
-Xin sửa lại đoạn script như sau:
+Vậy sửa lại đoạn script như sau:
 
 ```python
 ...
