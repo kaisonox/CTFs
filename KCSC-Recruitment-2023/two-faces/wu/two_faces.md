@@ -9,7 +9,7 @@
 
 **Description:** Don't judge a book by its cover.
 
-**File:** [two_faces](../chall/two_faces.rar)
+**File:** [two_faces](../chall/rev_two_faces.rar)
 
 # Solution
 

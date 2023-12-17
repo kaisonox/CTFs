@@ -9,7 +9,7 @@
 
 **Description:** I hid a little surprise for you somewhere in your computer. Let's see if you can find it!
 
-**File:** [hide_and_seek](../chall/hide_and_seek.rar)
+**File:** [hide_and_seek](../chall/rev_hide_and_seek.rar)
 
 # Solution
 ## Cách 1:

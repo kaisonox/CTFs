@@ -9,7 +9,7 @@
 
 **Description:** Unless I am in motion, I remain invisible.
 
-**File:** [hide_and_seek](../chall/dynamic_function.rar)
+**File:** [hide_and_seek](../chall/rev_dynamic_function.rar)
 
 # Solution
 
@@ -23,7 +23,7 @@ Mở file exe bằng IDA
 
 Ở đây phần làm các bạn bối rối nhất hẳn là `lpAddress` đúng không?
 
-Ta sẽ tìm hiểu về nó sau, bây giờ vẫn tìm hiểu từ đầu đã.
+Ta sẽ tìm hiểu về nó sau, bây giờ vẫn đọc từ đầu đã.
 
 Đoạn đầu dễ hiểu rồi, chỉ là in thông báo. Sau đó xin nhập chuỗi (`fgets`), lưu vào biến `Buffer`.
 

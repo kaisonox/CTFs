@@ -9,7 +9,7 @@
 
 **Description:** I've misplaced my password among this bunch of passwords. Can you help me find it?
 
-**File:** [password_checker](../chall/password_checker.rar)
+**File:** [password_checker](../chall/rev_password_checker.rar)
 
 # Solution
 
