@@ -139,7 +139,7 @@ Khá khó nhận ra, nhưng ở đây chương trình đang tạo một đoạn 
 - 0x68: Opcode của lệnh `push`.
 - 0xC3: Opcode của lệnh `ret`.
 
-Các bạn thấy hàm `j_strcmp` chứ? Nó là chỉ `strcmp` thôi, còn `VirtualProtect` để làm gì? Nó có tác dụng thay đổi quyền truy cập của một vùng nhớ.
+Các bạn thấy hàm `j_strcmp` chứ? Nó là `strcmp` thôi, còn `VirtualProtect` để làm gì? Nó có tác dụng thay đổi quyền truy cập của một vùng nhớ.
 - `j_strcmp`: Tham số đầu tiên là địa chỉ của vùng nhớ cần thay đổi quyền truy cập.
 - 6u: Kích thước vùng nhớ cần thay đổi quyền truy cập.
 - 0x40: Quyền truy cập mới (PAGE_EXECUTE_READWRITE).
