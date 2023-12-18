@@ -123,7 +123,7 @@ Hàm này chỉ in ra thông báo, như các bạn thấy trên terminal.
 File html chỉ là mã hóa flag đơn giản bằng xor.
 
 ### Note:
-Ở đây tôi không mã hóa resource, nên có thể strings trực tiếp, cũng có thể sẽ đọc được.
+Ở đây tôi không mã hóa resource, nên strings trực tiếp, cũng có thể sẽ đọc được hàm show cờ.
 
 
 # Hết.
