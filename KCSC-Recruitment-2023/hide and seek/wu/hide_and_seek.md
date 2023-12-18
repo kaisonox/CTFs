@@ -124,5 +124,9 @@ File html chỉ là mã hóa flag đơn giản bằng xor.
 
 ### Note:
 Ở đây tôi không mã hóa resource, nên strings trực tiếp, cũng có thể sẽ đọc được hàm show cờ.
+<<<<<<< HEAD
+=======
+
+>>>>>>> f6e460efdbcc829936bd2f451d33b54fc8ab3da5
 
 # Hết.
