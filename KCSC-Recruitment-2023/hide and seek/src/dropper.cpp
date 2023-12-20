@@ -103,7 +103,7 @@ PDWORD GetFunctionAddressByHash(char* library, __int64 hash)
 		// Calculate hash for this exported function
 		__int64 functionNameHash = GetHashFromString(functionName);
 
-		// If hash for CreateThread is found, resolve the function address
+		// If hash matches, get the virtual memory address of the function
 		if (functionNameHash == hash)
 		{
 			functionAddressRVA = addresOfFunctionsRVA[addressOfNameOrdinalsRVA[i]];

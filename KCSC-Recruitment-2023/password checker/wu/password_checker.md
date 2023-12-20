@@ -164,6 +164,13 @@ for password in passwords:
 
 Cái này các bạn đọc, debug một hồi là biết được.
 
+
+## Cách 3:
+
+Cách này hơi "tay to", đại khái là ta có thể copy `hash.so` và `passwordChecker` để dự phòng. Sau đó brute force, khi nào hết lần thử, 2 file bị xóa thì lấy bản copy phục hồi lại brute force tiếp.
+
+Tôi không viết script cho cách này nhé :v
+
 ### Note:
 
 Thuật toán mã hóa trong `hash.so` là md5 nhưng đã được thay đổi các hằng số.
