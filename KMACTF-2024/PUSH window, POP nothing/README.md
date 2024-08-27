@@ -419,10 +419,10 @@ Từ đây, ta cần tìm chuỗi `data` sao cho sau khi encode thành base64 v�
 
 Tóm tắt lại quá trình xử lý input:
 1. `KMACTF.exe` nhận input, gửi qua pipe. (command `1`)
-2. `Windows Update Checker 2.exe` nhận input, encode thành base64, gửi qua pipe.
+2. `Windows Update Checker 2.exe` nhận input, encode thành base64, lưu vào `base64_encoded`.
 3. `Windows Update Checker 2.exe` gửi từng ký tự của base64 qua pipe, `KMACTF.exe` nhận. (command `8`)
 4. `KMACTF.exe` nhận ký tự (lúc này đang chạy hàm `communicate`), gọi một trong các hàm tạo lỗi dựa vào ký tự nhận được.
-5. `KMACTF.exe` gửi mã lỗi exception qua pipe. (command `5`)
+5. `KMACTF.exe` gửi mã lỗi exception qua pipe. (command `5`).
 6. `Windows Update Checker 2.exe` nhận mã lỗi, so với `expected_error_code[curr_idx]`(`curr_idx` là index của ký tự base64 đang xử lý), nếu khớp thì xử lý theo mã lỗi, ngược lại trả về data `0xCC` (command `8`), kết thúc quá trình xử lý base64.
 7. Lặp lại từ bước 3.
 8. Khi đã xử lý hết base64, so sánh với `target`.
