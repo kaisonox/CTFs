@@ -473,7 +473,7 @@ int gen_error_code(uint8_t byte) {
 }
 
 int main() {
-    int predefined_code[] = { 
+    int expected_error_code[] = { 
         0xc0000094, 0xc0000005, 0xc0000096, 0xc0000005, 0xc0000094, 0xc0000096, 0xc000001d, 0xc0000094, 0xc0000094, 0xc000001d, 0xc0000094, 0xc000001d, 0xc0000096, 0xc0000096, 0xc0000094, 0x80000003, 0xc0000094, 0xc0000096, 0xc0000096, 0xc0000096, 0xc000001d, 0xc0000094, 0xc000001d, 0x80000003, 0xc0000005, 0xc0000096, 0xc0000094, 0xc0000005, 0xc000001d, 0xc000001d, 0x80000003, 0xc0000005, 0xc000001d, 0xc0000094, 0xc0000094, 0xc0000096, 0xc0000005, 0xc0000094, 0xc0000094, 0xc0000096, 0xc000001d, 0xc0000094, 0xc000001d, 0xc000001d, 0xc000001d, 0x80000003, 0xc0000094, 0xc0000005, 0xc0000005, 0xc000001d, 0xc000001d, 0xc0000094, 0xc0000094, 0xc0000005, 0xc0000094, 0xc000001d, 0xc0000096, 0xc0000096, 0xc0000005, 0x80000003, 0xc0000096, 0xc0000094, 0xc0000096, 0xc0000096 };
 
     char target[] = {
@@ -499,7 +499,7 @@ int main() {
             error_code = gen_error_code(base64_encode[curr_idx]);
             // std::cout << "index: " << curr_idx << " char: " << (char)(BYTE)base64_encode[curr_idx] << " error code: " << std::hex << error_code << std::endl;
 
-            if (predefined_code[curr_idx] != error_code)
+            if (expected_error_code[curr_idx] != error_code)
                 // std::cout << "Error code mismatched!" << std::endl;
                 continue;
             curr_char = base64_encode[curr_idx];
