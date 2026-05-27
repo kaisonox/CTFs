@@ -30,5 +30,3 @@ The `rc_id` order must also be correct.
 - `dump_check_calls.py` - List `f....()` functions and related constants within `check()` functions
 - `build_license.py` - Generate valid `license.bin`
 
-## Result
-The correct input sequence: `4498291314891210521449296`
