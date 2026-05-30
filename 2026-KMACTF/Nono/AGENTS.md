@@ -1,7 +1,3 @@
-# CLAUDE.md
-
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## Project Overview
 
 KMACTF 2025 reverse-engineering challenge. A 37x37 nonogram game (Raylib-cs, .NET 8, Windows x64) whose correct clue values are injected at runtime by a native JIT patch payload. The IL source contains decoy clue values.
@@ -47,7 +43,7 @@ For local non-injected development only:
 
 ```
 dotnet run --project Nono/Nono.csproj
-dotnet run --project Nono/Nono.csproj -- images/real_flag.txt
+dotnet run --project Nono/Nono.csproj -- flags/real_flag.txt
 ```
 
 Without PE injection, the managed app uses decoy clues.
