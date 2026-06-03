@@ -1,0 +1,7 @@
+Description:
+Earlier communication and data transmission utilizes the telegraph system. It uses electrical signals over wires. The sender uses a telegraph key to interrupt the electrical current, which was then decoded at the receiving end. There are various encoding systems used in telegraph system and the most famous is the Morse code.
+
+Details:
+Old computer veteran from the days of cold war left nothing but a text file. It puzzles us as it contains just one sentence and some random characters. Will you help us to try to find his secret? Since we're so nice, we'll even give you a free hint! The flag value will CSG_FLAG{LOOK.SOMETHING.LIKE.THIS}
+
+Find the flag by decoding the message

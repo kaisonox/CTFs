@@ -1,0 +1,27 @@
+══╣ User Data
+#!/bin/bash -xe
+# Create User
+echo "Create local user"
+useradd -m "user"
+echo "IamTheUser!" | passwd "user" --stdin
+echo "Add PAM setting to allow su to shutdown user"
+echo -e "auth\t[success=ignore default=1] pam_succeed_if.so\tuser = shutdown\nauth\tsufficient\tpam_succeed_if.so\tuse_uid user = user" > su.tmp
+cat su.tmp /etc/pam.d/su > su.tmp.2
+mv -f su.tmp.2 /etc/pam.d/su
+# Enable password authentication
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+systemctl restart sshd
+# Create shutdown user
+usermod -aG 0 shutdown
+mkdir -p /sbin/system
+chmod 750 /sbin/system
+echo -e '#!/bin/bash\nsudo poweroff -i' > /sbin/system/shutdown.sh
+chmod 750 /sbin/system/shutdown.sh
+chmod u+s /sbin/system/shutdown.sh
+usermod -s /sbin/system/shutdown.sh shutdown
+echo "shutdown ALL=NOPASSWD: /usr/sbin/poweroff -i" >> /etc/sudoers
+# Modify Polkit policy to allow shutdown for the shutdown user -- No polkit in Amazon Linux
+# echo -e "polkit.addRule(function(action, subject) {\n    if (action.id == \"org.freedesktop.login1.power-off-multiple-sessions\" &&\n        subject.user ==
+"shutdown") {\n            return polkit.Result.YES;\n    }\n});" > shutdown.rules
+# mv -f shutdown.rules /etc/polkit-1/rules.d/
+# service polkit restart

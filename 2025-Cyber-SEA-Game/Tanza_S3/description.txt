@@ -1,0 +1,2 @@
+You have obtained a certain image. It appears to be a normal JPEG, but something seems to be hidden within it.
+Analyze the file and extract the hidden flag.

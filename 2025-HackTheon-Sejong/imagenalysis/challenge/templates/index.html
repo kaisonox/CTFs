@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageNalysis</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ImageNalysis</h1>
+            <div class="subtitle">Image Pattern Recognition System</div>
+        </header>
+
+        <div class="card">
+            <div class="card-body">
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="imageFile">Select image to analyze:</label>
+                        <input type="file" id="imageFile" name="imageFile" accept="image/*" required>
+                    </div>
+                    <button type="submit" class="btn">Analyze Image</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ImageNalysis</p>
+    </footer>
+</body>
+</html>

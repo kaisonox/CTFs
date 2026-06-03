@@ -1,0 +1,15 @@
+Description:
+An attack suspected to be an inside job has been detected on the machine at 192.168.56.104 within the corporate network. According to the incident investigation, there is a possibility that authentication credentials were leaked from the machine at 192.168.56.33.
+
+
+Your mission is to analyze the provided packet data, identify the attack method used, uncover the potentially leaked credentials, and expose the traitor within the organization.
+
+
+https://cyberseagame2025.s3.us-east-2.amazonaws.com/Resources/N4_betrayer.zip
+
+
+Extraction password is “csg2025”.
+
+Details:
+The flag format is as follows:
+CSG_FLAG{<user_name>::<domain_name>:<16-character alphanumeric>:<32-character alphanumeric>:<620-character alphanumeric>}

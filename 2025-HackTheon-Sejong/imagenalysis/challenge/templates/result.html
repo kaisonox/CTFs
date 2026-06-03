@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageNalysis Result</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ImageNalysis Result</h1>
+            <div class="subtitle">Image Pattern Recognition Result</div>
+        </header>
+
+        <div class="card result-card">
+            <div class="card-body">
+                <h2>Analysis Result</h2>
+                <p>Filename: {{ .FileName }}</p>
+                
+                <div class="result-box">
+                    <pre>{{ .Result }}</pre>
+                </div>
+                
+                <a href="/" class="btn">Analyze New Image</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ImageNalysis</p>
+    </footer>
+</body>
+</html>

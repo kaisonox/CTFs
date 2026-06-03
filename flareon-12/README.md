@@ -1,1 +1,0 @@
-Flare-on 12 quick notes

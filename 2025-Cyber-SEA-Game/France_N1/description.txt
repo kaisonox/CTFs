@@ -1,0 +1,14 @@
+Description:
+Cryptography, often described as the art and science of keeping information secure, achieves this by transforming data into an unreadable format using mathematical algorithms and techniques. Its primary aim is to safeguard sensitive information, ensuring its confidentiality during storage, transmission, and access. The beauty of cryptography lies in its versatility: it can encrypt a wide range of data types, from plain text to binary data and even images, employing a variety of methods. One of the most esteemed and widely-used cryptographic techniques is the Advanced Encryption Standard (AES), trusted for its robust security and efficiency. This cryptographic marvel plays a crucial role in safeguarding information in our digital age.
+
+Details:
+In a bustling metropolis, Alex, a brilliant cybersecurity analyst at a prestigious firm, stumbled upon a peculiar HTML file while conducting a routine security audit. The file appeared to be just another webpage, but something about it sparked Alex's curiosity.
+
+
+As the days passed, the enigmatic HTML file began to reveal its secrets, gradually unveiling an intricate puzzle carefully hidden in its code. With each layer of encryption unraveled, Alex delved deeper into the digital labyrinth, driven by the mystery concealed within. Little did Alex know that this innocuous-looking HTML file would lead to an extraordinary journey of decryption, unraveling a message of intrigue, danger, and, ultimately, a revelation that could alter the course of cybersecurity history.
+
+
+Your task is to join Alex in deciphering the cryptic code and uncovering the message hidden within, as the fate of this digital enigma rests in your hands.
+
+
+Obtain and decode the flag by examining the HTML file.

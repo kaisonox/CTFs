@@ -1,0 +1,10 @@
+Description:
+A VoIP call has been captured, but something about it seems… unusual. The signaling looks normal, and the call appears short and uneventful. However, the real message might not be in the SIP headers or the call metadata. Your task is to dig deeper into the media stream and uncover what’s truly being transmitted.
+
+Details:
+You are given a packet capture file containing a VoIP session.
+The call uses standard protocols, but the payload may hold more than just “voice.”
+Analyze the signaling and media streams carefully. Identify the codec, extract the audio, and listen closely.
+The answer you seek is hidden in plain sound—decode it to reveal the flag.
+Notes:
+Flag format: CSG_FLAG{the message you found}

@@ -1,0 +1,25 @@
+Description:
+You are a computer science professor at a prestigious university, and one of your students, John, has approached you with a unique challenge
+
+Details:
+John, the student, is in a bit of a predicament. He encrypted his project using a  password before an important presentation. Unfortunately, he has forgotten the password and is now unable to access the project.
+
+
+
+Help John recover the password so that he can access his project
+
+Notes:
+John leaves some notes:
+
+
+ko : 8-digit number
+ka : 4-digit alphanumeric character
+ko : 6-digit alphanumeric character
+
+
+Order:
+0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+
+
+Flag format:
+CSG_FLAG{password}

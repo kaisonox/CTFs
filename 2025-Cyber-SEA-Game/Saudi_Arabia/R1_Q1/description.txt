@@ -1,0 +1,7 @@
+Description:
+We found a suspicious executable, but it's clearly corrupted and won’t run. The file seems to have been tampered. Can you restore the file? The flag is obtained when you execute the restored executable (without any options).
+File: corrupted.exe
+
+Details:
+Notes:
+Flag format: CSG_FLAG{string}

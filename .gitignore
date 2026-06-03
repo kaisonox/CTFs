@@ -1,0 +1,44 @@
+# Visual Studio / MSVC
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+
+# MSVC build intermediates
+[Dd]ebug/
+[Rr]elease/
+x64/[Dd]ebug/
+x64/[Rr]elease/
+*.obj
+*.o
+*.pdb
+*.idb
+*.ipdb
+*.iobj
+*.ilk
+*.exp
+*.lib
+*.tlog
+*.log
+*.lastbuildstate
+*.recipe
+*.ipch
+*.pch
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Reverse-engineering working files
+*.i64
+*.idb
+*.dmp
+*.DMP
+
+# OS noise
+.DS_Store
+Thumbs.db

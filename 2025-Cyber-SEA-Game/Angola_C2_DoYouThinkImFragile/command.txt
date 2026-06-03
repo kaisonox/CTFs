@@ -1,0 +1,16 @@
+@echo off
+cls
+setlocal enableextensions && setlocal enabledelayedexpansion
+set HPOJs=YXSWCJUBLPNZGIAHDMKRVFTEQO
+set BeoPl=clpadkuxztisfnerygwobmhqvj
+set kufzE=8394265017
+
+@%BeoPl:~14,1%%BeoPl:~0,1%%BeoPl:~22,1%%BeoPl:~19,1% %BeoPl:~19,1%%BeoPl:~12,1%%BeoPl:~12,1%
+%BeoPl:~0,1%%BeoPl:~1,1%%BeoPl:~11,1%
+%BeoPl:~11,1%%BeoPl:~14,1%%BeoPl:~9,1%%BeoPl:~1,1%%BeoPl:~19,1%%BeoPl:~0,1%%BeoPl:~3,1%%BeoPl:~1,1% %BeoPl:~14,1%%BeoPl:~13,1%%BeoPl:~3,1%%BeoPl:~20,1%%BeoPl:~1,1%%BeoPl:~14,1%%BeoPl:~14,1%%BeoPl:~7,1%%BeoPl:~9,1%%BeoPl:~14,1%%BeoPl:~13,1%%BeoPl:~11,1%%BeoPl:~10,1%%BeoPl:~19,1%%BeoPl:~13,1%%BeoPl:~11,1% && %BeoPl:~11,1%%BeoPl:~14,1%%BeoPl:~9,1%%BeoPl:~1,1%%BeoPl:~19,1%%BeoPl:~0,1%%BeoPl:~3,1%%BeoPl:~1,1% %BeoPl:~14,1%%BeoPl:~13,1%%BeoPl:~3,1%%BeoPl:~20,1%%BeoPl:~1,1%%BeoPl:~14,1%%BeoPl:~4,1%%BeoPl:~14,1%%BeoPl:~1,1%%BeoPl:~3,1%%BeoPl:~16,1%%BeoPl:~14,1%%BeoPl:~4,1%%BeoPl:~14,1%%BeoPl:~7,1%%BeoPl:~2,1%%BeoPl:~3,1%%BeoPl:~13,1%%BeoPl:~11,1%%BeoPl:~10,1%%BeoPl:~19,1%%BeoPl:~13,1%
+%BeoPl:~11,1%%BeoPl:~14,1%%BeoPl:~9,1% %HPOJs:~17,1%%HPOJs:~20,1%%HPOJs:~17,1%%BeoPl:~18,1%%BeoPl:~0,1%=%BeoPl:~6,1%%BeoPl:~19,1%%BeoPl:~8,1%%BeoPl:~4,1%%BeoPl:~24,1%%BeoPl:~12,1%%BeoPl:~23,1%%BeoPl:~21,1%%BeoPl:~7,1%%BeoPl:~18,1%%BeoPl:~1,1%%BeoPl:~25,1%%BeoPl:~10,1%%BeoPl:~14,1%%BeoPl:~9,1%%BeoPl:~22,1%%BeoPl:~17,1%%BeoPl:~2,1%%BeoPl:~13,1%%BeoPl:~15,1%%BeoPl:~20,1%%BeoPl:~16,1%%BeoPl:~3,1%%BeoPl:~5,1%%BeoPl:~11,1%%BeoPl:~0,1%
+%BeoPl:~11,1%%BeoPl:~14,1%%BeoPl:~9,1% %HPOJs:~12,1%%HPOJs:~6,1%%BeoPl:~14,1%%BeoPl:~12,1%%BeoPl:~6,1%=%kufzE:~8,1%%kufzE:~9,1%%kufzE:~3,1%%kufzE:~0,1%%kufzE:~2,1%%kufzE:~5,1%%kufzE:~1,1%%kufzE:~7,1%%kufzE:~6,1%%kufzE:~4,1%
+%BeoPl:~11,1%%BeoPl:~14,1%%BeoPl:~9,1% %BeoPl:~22,1%%HPOJs:~25,1%%HPOJs:~18,1%%HPOJs:~4,1%%HPOJs:~3,1%=%HPOJs:~20,1%%HPOJs:~18,1%%HPOJs:~6,1%%HPOJs:~19,1%%HPOJs:~9,1%%HPOJs:~7,1%%HPOJs:~4,1%%HPOJs:~24,1%%HPOJs:~0,1%%HPOJs:~16,1%%HPOJs:~15,1%%HPOJs:~17,1%%HPOJs:~13,1%%HPOJs:~8,1%%HPOJs:~21,1%%HPOJs:~25,1%%HPOJs:~12,1%%HPOJs:~11,1%%HPOJs:~1,1%%HPOJs:~23,1%%HPOJs:~3,1%%HPOJs:~14,1%%HPOJs:~22,1%%HPOJs:~5,1%%HPOJs:~2,1%%HPOJs:~10,1%
+%BeoPl:~11,1%%BeoPl:~14,1%%BeoPl:~9,1% %HPOJs:~0,1%%BeoPl:~0,1%%kufzE:~0,1%=echo %%hOKCW:~16,1%%%%MVMwc:~1,1%%%%MVMwc:~1,1%%%%MVMwc:~3,1%% %%MVMwc:~11,1%%%%MVMwc:~1,1%%%%MVMwc:~20,1%% %%MVMwc:~22,1%%%%MVMwc:~18,1%%%%MVMwc:~3,1%% %%hOKCW:~6,1%%%%MVMwc:~1,1%%%%MVMwc:~18,1%%%%MVMwc:~16,1%%%%MVMwc:~19,1%%%%MVMwc:~22,1%%%%MVMwc:~14,1%%%%MVMwc:~0,1%%%%MVMwc:~10,1%%%%MVMwc:~22,1%%%%MVMwc:~14,1%%%%MVMwc:~12,1%%%%MVMwc:~1,1%%%%MVMwc:~18,1%%%%MVMwc:~24,1%%... %%HPOJs:~22,1%%%%MVMwc:~1,1%% %%MVMwc:~1,1%%%%MVMwc:~17,1%%%%MVMwc:~13,1%%%%MVMwc:~18,1%% %%MVMwc:~14,1%%%%MVMwc:~15,1%%%%MVMwc:~13,1%% %%hOKCW:~17,1%%%%hOKCW:~12,1%%%%hOKCW:~4,1%% %%MVMwc:~5,1%%%%MVMwc:~12,1%%%%MVMwc:~10,1%%%%MVMwc:~13,1%%, %%MVMwc:~15,1%%%%MVMwc:~13,1%%%%MVMwc:~19,1%%%%MVMwc:~13,1%% %%MVMwc:~12,1%%%%MVMwc:~24,1%% %%MVMwc:~14,1%%%%MVMwc:~15,1%%%%MVMwc:~13,1%% %%MVMwc:~17,1%%%%MVMwc:~22,1%%%%MVMwc:~24,1%%%%MVMwc:~24,1%%%%MVMwc:~9,1%%%%MVMwc:~1,1%%%%MVMwc:~19,1%%%%MVMwc:~3,1%% %%hOKCW:~14,1%%%%GUefu:~0,1%%%%MVMwc:~19,1%%%%GUefu:~6,1%%%%hOKCW:~25,1%%%%hOKCW:~12,1%%%%MVMwc:~25,1%%%%GUefu:~6,1%%$%%GUefu:~2,1%%%%hOKCW:~13,1%%%%MVMwc:~21,1%%%%MVMwc:~5,1%%%%MVMwc:~13,1%%
+@%BeoPl:~14,1%%BeoPl:~0,1%%BeoPl:~22,1%%BeoPl:~19,1% %BeoPl:~19,1%%BeoPl:~12,1%%BeoPl:~12,1%
+%BeoPl:~0,1%%BeoPl:~1,1%%BeoPl:~11,1%
