@@ -91,10 +91,10 @@ Challenges I designed and built (source and intended solution included).
 | [imagenalysis](2025-HackTheon-Sejong/imagenalysis) | web / rev |
 ### ACS 2025 (Qualifier & Final)
 
-- [ACS 2025 — A Busan victory with KMA LightBlue](https://sonx4444.github.io/posts/acs-2025-a-busan-victory-with-kma-lightblue/) — full writeups published on the blog.
+- [ACS 2025 — A Busan victory with KMA LightBlue](https://kaisonox.github.io/posts/acs-2025-a-busan-victory-with-kma-lightblue/) — full writeups published on the blog.
 
 ### ACS 2024 (Qualifier & Final)
 
-- [ACS 2024 — A silver journey in Ha Long with KMA Orange](https://sonx4444.github.io/posts/acs-2024-a-silver-journey-in-ha-long-with-kma-orange/) — full writeups published on the blog.
+- [ACS 2024 — A silver journey in Ha Long with KMA Orange](https://kaisonox.github.io/posts/acs-2024-a-silver-journey-in-ha-long-with-kma-orange/) — full writeups published on the blog.
 
 ---
